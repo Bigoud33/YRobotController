@@ -11,8 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_device_list.*
 
 
-const val EXTRA_ADRESS = "device_adress"
-
 class DeviceListActivity : AppCompatActivity() {
 
     var bluetoothAdapter: BluetoothAdapter? = null
@@ -68,6 +66,8 @@ class DeviceListActivity : AppCompatActivity() {
         }
     }
 
-
+    companion object {
+        const val EXTRA_ADRESS = "device_adress"
+    }
 }
 
