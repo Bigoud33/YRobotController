@@ -113,7 +113,7 @@ class BluetoothActivity : AppCompatActivity() {
                 .setAction("Connect") { reconnect() }.show()
             return
         } else {
-            val send = message.toByteArray()
+            val send = (message + "\n").toByteArray()
             bluetoothService?.write(send)
         }
     }
